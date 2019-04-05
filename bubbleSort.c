@@ -9,14 +9,14 @@ void swap(int *a, int *b) {
 }
 
 void bubbleSort(int A[], int n) {
-    int i, j, flag=0;
+    int i, j, flag = 0;
 
     for(i = 0; i < (n-1); i++) {
             flag = 0;
             for(j = 0; j < (n-i-1); j++) {
                     if(A[j] < A[j+1]) {
                             swap(&A[j], &A[j+1]);
-                            flag=1;
+                            flag = 1; // set flag to 1 (a comparison was done)
                     }
             }
 
@@ -31,9 +31,7 @@ void bubbleSort(int A[], int n) {
 }
 
 int main() {
-
     int A[MAX_SIZE];
-
     int n;
 
     printf("Enter size of  array (n): ");
