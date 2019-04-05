@@ -23,7 +23,7 @@ void bubbleSort(int A[], int n) {
                     }
             }
             if(flag==0) {  /* if flag is 0 then the array is already sorted, there is no need to more comparisons */
-                        break;
+				break;
             }
     }
 }
