@@ -9,7 +9,8 @@ void swap(int *a, int *b) {	// swap the position of the two elements in the arra
 }
 
 void bubbleSort(int A[], int n) {
-    int i, j, flag = 0;
+    int i, j;
+    int flag = 0; // the flag is required to make the algorithm adaptive
 
     /*
     for n elements, (n-1) passes are required
@@ -23,7 +24,7 @@ void bubbleSort(int A[], int n) {
                     }
             }
             if(flag==0) {  /* if flag is 0 then the array is already sorted, there is no need to more comparisons */
-				break;
+		break;
             }
     }
 }
