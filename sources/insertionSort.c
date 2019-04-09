@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header.h"
 
-void InsertionSort(int A[] , int n) {
+void insertionSort(int A[] , int n) {
     int i, j, x;
 
     for(i = 1; i < n; i++){ // loop for passes ( [n-1] passes in total)

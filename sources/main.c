@@ -58,7 +58,7 @@ int main() {
     printf("Array sorted: ");
 
     if(option==1){
-        InsertionSort(A, n);
+        insertionSort(A, n);
     }else if(option==2){
         bubbleSort(A, n);
     }
