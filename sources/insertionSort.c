@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAX_SIZE 1000
+#include "header.h"
 
 void InsertionSort(int A[] , int n) {
     int i, j, x;
@@ -16,25 +16,3 @@ void InsertionSort(int A[] , int n) {
     }
 }
 
-int main() {
-    int A[MAX_SIZE];
-    int n;
-    printf("Enter size of  array (n): ");
-    scanf("%d", &n);
-
-    for(int i = 0; i < n; i++) {
-        printf("Enter number at index  ");
-        printf("%d", i ) ;
-        printf(" : ") ;
-        scanf("%d", &A[i]);
-    }
-    printf("Sorting array...\n");
-    printf("Array sorted: ");
-    InsertionSort(A, n);
-
-    // prints all elements sorted
-    for(int i  = 0; i < n; i++) {
-        printf("%d ", A[i]);
-    }
-    return 0;
-}
