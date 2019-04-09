@@ -3,6 +3,20 @@
 #include "header.h"
 #define MAX_SIZE 1000
 
+
+void printElements(int A[], int n){
+   printf("[");
+    for(int i  = 0; i < n; i++) {
+        if(i == n-1){
+            printf("%d", A[i]);
+        }else{
+            printf("%d", A[i]);
+            printf(", ");
+        }
+    }
+   printf("]");
+}
+
 int main() {
     int A[MAX_SIZE];
     int n;
@@ -11,29 +25,52 @@ int main() {
     printf("Enter size of  array (n): ");
     scanf("%d", &n);
 
+    printf("\n");
+
+
     for(int i = 0; i < n; i++) {
         printf("Enter number at index  ");
-        printf("%d", i ) ;
-        printf(" : ") ;
+        printf("%d", i) ;
+        printf(" : ");
         scanf("%d", &A[i]);
     }
 
-    printf("Insertion Sort [1] \n");
-    printf("Bubble sort [2] \n");
-    printf("Selection array [3] \n");
+    printf("\n");
+    printf("Array unsorted: ");
+    printElements(A, n);
+    printf("\n");
+
+
+    printf("\n");
+    printf("[1] Insertion Sort\n");
+    printf("[2] Bubble sort\n");
+    printf("[3] Selection array\n");
+    printf("\n");
     printf("Select an algorithm to sort this array: \n");
 
     scanf("%d", &option);
+    printf("\n");
+    printf("\n");
+
+
+    printf("Sorting array...\n");
+    printf("\n");
+    printf("Array sorted: ");
 
     if(option==1){
-        printf("Sorting array...\n");
-        printf("Array sorted: ");
         InsertionSort(A, n);
+    }else if(option==2){
+        bubbleSort(A, n);
     }
 
     // prints all elements sorted
-    for(int i  = 0; i < n; i++) {
-        printf("%d ", A[i]);
-    }
+    printElements(A, n);
+
+    printf("\n");
+
+    printf("The array has been sorted! \n");
+
+    printf("\n");
+
     return 0;
 }
