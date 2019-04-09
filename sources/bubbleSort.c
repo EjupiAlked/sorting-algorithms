@@ -1,6 +1,5 @@
 #include <stdio.h>
-#define MAX_SIZE 1000
-
+#include "header.h"
 
 void swap(int *a, int *b) {	// swap the position of the two elements in the array
     int temp = *a;
@@ -24,30 +23,9 @@ void bubbleSort(int A[], int n) {
                     }
             }
             if(flag==0) {  /* if flag is 0 then the array is already sorted, there is no need to more comparisons */
-		break;
+            break;
             }
     }
 }
 
-int main() {
-    int A[MAX_SIZE];
-    int n;
-    printf("Enter size of  array (n): ");
-    scanf("%d", &n);
 
-    for(int i = 0; i < n; i++) {
-        printf("Enter number at index  ");
-        printf("%d", i ) ;
-        printf(" : ") ;
-        scanf("%d", &A[i]);
-    }
-    printf("Sorting array...\n");
-    printf("Array sorted: ");
-    bubbleSort(A, n);
-
-    // prints all elements sorted
-    for(int i  = 0; i < n; i++) {
-        printf("%d ", A[i]);
-    }
-    return 0;
-}
