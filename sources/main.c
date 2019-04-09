@@ -44,7 +44,7 @@ int main() {
     printf("\n");
     printf("[1] Insertion Sort\n");
     printf("[2] Bubble sort\n");
-    printf("[3] Selection array\n");
+    printf("[3] Selection sort\n");
     printf("\n");
     printf("Select an algorithm to sort this array: \n");
 
@@ -61,6 +61,8 @@ int main() {
         insertionSort(A, n);
     }else if(option==2){
         bubbleSort(A, n);
+    }else if(option==3){
+        selectionSort(A, n);
     }
 
     // prints all elements sorted
