@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "header.h"
+#include "swap.h"
 
 void swap(int *a, int *b) {	// swap the position of the two elements in the array
     int temp = *a;

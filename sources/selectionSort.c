@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "header.h"
 
 void swap(int *a, int *b) {	// swap the position of the two elements in the array
     int temp = *a;
@@ -10,8 +9,8 @@ void swap(int *a, int *b) {	// swap the position of the two elements in the arra
 void selectionSort(int A[], int n) {
     int i, k, j;
 
-    for(i=0, i<(n-1), i++){
-        for(i=k=j, j<n, j++){
+    for(i=0; i<(n-1); i++){
+        for(j=k=i; j<n; j++){
             if(A[j]<A[k]){
                 k = j;
             }
