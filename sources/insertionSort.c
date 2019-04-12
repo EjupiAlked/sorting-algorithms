@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "header.h"
 
 void insertionSort(int A[] , int n) {
     int i, j, x;
