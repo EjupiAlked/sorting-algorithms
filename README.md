@@ -1,2 +1,2 @@
 # SortingAlgorithms
-This repository will be used to upload sorting algorithms using C language.
+This repository will be used to upload implementation of sorting algorithms using C language.
